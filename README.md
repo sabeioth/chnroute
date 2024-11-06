@@ -10,7 +10,7 @@ ip段信息取自 [misakaio](https://github.com/misakaio/chnroutes2)
 /file remove [find name="CN.rsc"]
 /tool fetch url="https://cdn.jsdelivr.net/gh/sabeioth/chnroute@main/CN.rsc"
 :if ([:len [/file find name=CN.rsc]] > 0) do={
-/ip firewall address-list remove [find comment="AS4809"]
+/ip firewall address-list remove [find comment="ispip"]
 /import CN.rsc
 }
 ```
